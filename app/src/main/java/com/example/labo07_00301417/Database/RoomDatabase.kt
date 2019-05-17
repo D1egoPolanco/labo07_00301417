@@ -8,7 +8,7 @@ import java.security.AccessControlContext
 
 @Database(entities = [Githubrepo::class], version = 1, exportSchema = false)
 public abstract class RoomDatabase : RoomDatabase(){
-    abstract fun repoDao (): githubDAO
+    abstract fun repoDao(): githubDAO
 
     companion object {
         private var Instance: RoomDatabase? = null
